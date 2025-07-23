@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AYESHA AI – Smart Workflow Automation</title>
+  <title>AYESHA AI – Orchestrating Tomorrow's Workflows</title>
   <meta name="description" content="AYESHA AI helps automate routine office workflows, freeing you to focus on what matters most." />
   <meta property="og:title" content="AYESHA AI" />
   <meta property="og:description" content="Automate the ordinary. Focus on the extraordinary." />
@@ -14,9 +14,9 @@
   <script async defer data-domain="ayeshaai.net" src="https://plausible.io/js/plausible.js"></script>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
-      color: #333;
+      font-family: 'Orbitron', sans-serif; /* Futuristic font */
+      background: #0A0A2A; /* Deep blue background */
+      color: #E0E0E0; /* Light gray for text */
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -25,69 +25,106 @@
       text-align: center;
       margin: 0;
       padding: 2rem;
+      background-image: url('ai_background.png'); /* AI background image */
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      overflow: hidden;
+    }
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6); /* Overlay for readability */
+      z-index: -1;
     }
     h1 {
-      font-size: 2.5rem;
+      font-size: 3.5rem;
       margin-bottom: 0.5rem;
+      color: #4A90E2; /* Electric blue for headings */
+      text-shadow: 0 0 15px rgba(74, 144, 226, 0.7); /* Glowing effect */
     }
     .tagline {
-      font-size: 1rem;
-      color: #666;
-      margin-bottom: 1.5rem;
+      font-size: 1.5rem;
+      color: #8A2BE2; /* Purple for tagline */
+      margin-bottom: 2rem;
+      text-shadow: 0 0 10px rgba(138, 43, 226, 0.5);
     }
     p {
-      font-size: 1.2rem;
-      max-width: 600px;
+      font-size: 1.3rem;
+      max-width: 700px;
+      line-height: 1.6;
+      color: #B0B0B0;
     }
     form {
-      margin-top: 2rem;
+      margin-top: 3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     input[type="email"] {
-      padding: 0.75rem;
-      font-size: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      width: 300px;
+      padding: 1rem;
+      font-size: 1.1rem;
+      border: 1px solid #4A90E2;
+      border-radius: 8px;
+      width: 350px;
+      background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent input */
+      color: #E0E0E0;
+      outline: none;
+    }
+    input[type="email"]::placeholder {
+      color: #A0A0A0;
     }
     button {
-      margin-top: 1rem;
-      padding: 0.75rem 1.5rem;
-      font-size: 1rem;
-      background-color: #4a90e2;
+      margin-top: 1.5rem;
+      padding: 1rem 2.5rem;
+      font-size: 1.2rem;
+      background-color: #4A90E2; /* Electric blue button */
       color: white;
       border: none;
-      border-radius: 6px;
+      border-radius: 8px;
       cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 0 20px rgba(74, 144, 226, 0.6); /* Button glow */
     }
     button:hover {
       background-color: #357ac9;
+      transform: translateY(-3px);
     }
     footer {
-      margin-top: 2rem;
-      font-size: 0.9rem;
+      margin-top: 3rem;
+      font-size: 1rem;
       color: #777;
     }
     .logo {
-      width: 120px;
+      width: 150px;
       height: auto;
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
+      filter: drop-shadow(0 0 15px rgba(74, 144, 226, 0.8)); /* Logo glow */
     }
+    /* Import Orbitron font */
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
   </style>
 </head>
 <body>
   <img src="A_digital_vector_graphic_features_the_logo_and_bra.png" alt="AYESHA AI Logo" class="logo" />
   <h1>AYESHA AI</h1>
-  <div class="tagline">Automate the ordinary. Focus on the extraordinary.</div>
+  <div class="tagline">Unleash Cognitive Automation. Redefine Productivity.</div>
   <p>Smarter workflows. Less busywork.<br>
   AYESHA AI helps automate routine tasks so you can focus on what matters.</p>
 
   <form name="notify" method="POST" data-netlify="true">
     <input type="hidden" name="form-name" value="notify" />
-    <input type="email" name="email" placeholder="Your email address" required />
+    <input type="email" name="email" placeholder="Enter your neural interface ID..." required />
     <br />
-    <button type="submit">Notify Me</button>
+    <button type="submit">Activate AI Integration</button>
   </form>
 
-  <footer>© 2025 AYESHA AI | Built with love in Canberra</footer>
+  <footer>© 2025 AYESHA AI | Built with quantum love in Canberra</footer>
 </body>
 </html>
+
+
